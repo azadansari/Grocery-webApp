@@ -1,0 +1,129 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: "Cormorant Garamond",serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mainboxcontent{
+  width: 100%;
+  margin: 0;
+  padding: 60px 7% 10px 7%;
+}
+
+.default-green-btn{
+  background-color: #668c5b;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid #668c5b;
+}
+.default-green-btn:hover{
+  background-color: #000000;
+  color: white;
+  border-radius: 3px;
+  border-color: #000000;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+  font-family: "Cormorant Garamond",serif;
+}
+
+.small-fnt{
+  font-size: 14px;
+}
+.pl-0{
+  padding-left: 0px !important
+}
+
+.paragraph-text{
+  color: rgba(0,0,0,0.6);
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #668c5b;
+  outline: 0;
+  box-shadow: none;
+}
+
+
+.welcomeFarm h2, .why-us h2, .product-category-slider h2{
+  font-size: 40px;
+  color: #668c5b;
+  font-weight: 400;
+  font-family: Allura,cursive;
+}
+
+
+.DailyProd {
+  margin: 10px 5px;
+  padding: 0 0 10px 0;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  -webkit-transition: 150ms ease;
+  transition: 150ms ease;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(17, 121, 239, 0.15);
+          box-shadow: 0 2px 5px 0 rgba(17, 121, 239, 0.15);
+}
+
+.DailyProd:hover {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(17, 121, 239, 0);
+          box-shadow: 0 2px 5px 0 rgba(17, 121, 239, 0);
+  -webkit-transition: 150ms ease;
+  transition: 150ms ease;
+}
+
+.DailyProd img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*  Products Item Card    */
+.products {
+  padding: 60px 2%;
+  text-align: center;
+}
+
+.product-item {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: left;
+  box-shadow: 0 5px 12px -8px rgb(0 0 0 / 33%);
+  margin-top: 40px;
+  overflow: hidden;
+}
+.product-item:hover {
+  box-shadow: 0 5px 12px -8px rgb(0 0 0 / 10%);
+  transition: 0.2s ease-in;
+}
+
+.product-item img {
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
+.product-item img:hover {
+  transform: scale(1.1);
+  transition: 0.5s all ease-in-out;
+}
+.textcontent {
+  margin: 0;
+  padding: 15px;
+}
+/*  Products Item Card  End  */
+
+
+
+@media(max-width:768px){
+  .mainboxcontent{padding: 40px 8px;}
+}
+
+@media(max-width:575px){
+  .display-n{
+    display: none;
+  }
+
+}

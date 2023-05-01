@@ -1,0 +1,95 @@
+<div class="cart">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-md-12 bg-light">
+        <div class="cart-item">
+          <h4>Shopping Cart</h4>
+
+          <table class="table border-top mt-4">
+            <thead>
+              <tr>
+                <th scope="col" class="small-fnt">Items</th>
+                <th scope="col" class="small-fnt">Product Name</th>
+                <th scope="col" class="small-fnt">Quantity</th>
+                <th scope="col" class="small-fnt">Item Price</th>
+                <th scope="col" class="small-fnt">Add/Remove Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="pl-0"><img src="../../assets/images/products/product1.jpg" width="100px" alt=""></th>
+                <td class="text-success small-fnt">Fresh Vegitables</td>
+                <td class="text-success small-fnt">1Kg</td>
+                <td class="text-success small-fnt">$2.5</td>
+                <td class="text-success small-fnt">
+                  <button class="default-green-btn" style="font-size:11px;background-color:#668c5b;border: none;">+</button> &nbsp;
+                  <button class="default-green-btn" style="font-size:11px;background-color:#e14a4a;border: none;">-</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"  class="pl-0"><img src="../../assets/images/products/product2.jpg" width="100px" alt=""></th>
+                <td class="text-success small-fnt">Fresh Vegitables</td>
+                <td class="text-success small-fnt">1Kg</td>
+                <td class="text-success small-fnt">$1.5</td>
+                <td class="text-success small-fnt">
+                  <button class="default-green-btn" style="font-size:11px;background-color:#668c5b;border: none;">+</button> &nbsp;
+                  <button class="default-green-btn" style="font-size:11px;background-color:#e14a4a;border: none;">-</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+
+      <!-- Cart Summary and Checkout card -->
+      <div class="col-xl-4 col-lg-4 col-md-12">
+        <div class="cart-item">
+          <h4>Cart Summary</h4>
+
+          <table class="table border-top mt-4">
+            <tbody>
+              <tr>
+                <td class="small-fnt fw-lighter">Estimated delivery date <span class="float-end">06 Jul - 08 Jul</span></td>
+              </tr>
+              <tr>
+                <td class="small-fnt fw-lighter">Subtotal <span class="float-end">$2.5</span></td>
+              </tr>
+              <tr>
+                <td class="small-fnt fw-lighter">Shipping & delivery <span class="float-end">$0.30</span></td>
+              </tr>
+
+              <tr>
+                <td class="small-fnt fw-lighter">Total <span class="float-end">$2.80</span></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn default-green-btn btn-sm" type="button" id="button-addon2">Apply Coupon</button>
+          </div>
+
+          <div>
+            <a class="btn btn-primary col-12" (click)="placeOrder()">Checkout</a>
+            <p class="text-success fw-bold mt-3">Safe and Secure Payments. 100% authentic products.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="poupmessage" [ngClass]="{'popshow':show==1}">
+  <div class="messgecontainer">
+    <span class="popClose" (click)="closePop()">&times;</span>
+    <h4>Your Order is Placed</h4>
+    <p>Thank You For Shopping from <b style="color:#668c5b">Grocery</b></p>
+    <button class="btn btn-success btn-sm" id="goshop" routerLink="/">Home</button>&nbsp; OR &nbsp;
+    <a class="btn btn-success btn-sm" routerLink="/shop">Shop</a>
+  </div>
+</div>
